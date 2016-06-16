@@ -36,7 +36,7 @@ function handleMessageEvent(event) {
       }
       console.log(message);
       // let message = { body: text };
-      if (isFirstMessage || translatedText === 'r') {
+      if (isFirstMessage || text === 'r') {
         message.reset = true;
         isFirstMessage = false;
       }

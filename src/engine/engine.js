@@ -31,7 +31,6 @@ function getMessagesToSend(responseKeysHash) {
 function turn(message) {
   let responseKeysHash;
   if (message.reset === true) {
-    console.log('reset = true');
     bot = Stately.machine(statelyConfig, INITIAL_STATE).bind(function(event, oldState, newState) {
       this[newState].oldState = oldState;
     });

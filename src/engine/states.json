@@ -1,25 +1,25 @@
 {
   "HEY_THERE": {
-   "text": "Helloo!!"
+   "text": "你好!!"
   },
   "GREETING": {
-    "text": "are you looking for a place to rent?"
+    "text": "你在找租的地方吗？"
   },
   "GROUP_MYSELF": {
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Are you looking with a group of friends or by yourself?",
+        "text":"你跟一群朋友或自己找？",
         "buttons":[
           {
             "type":"postback",
-            "title":"group",
+            "title":"组",
             "payload":"group"
           },
           {
             "type":"postback",
-            "title": "by myself",
+            "title": "我自己",
             "payload":"by myself"
           }
         ]
@@ -51,16 +51,16 @@
     }
   },
   "NUM_OF_ROOMS": {
-    "text": "How many bedrooms will you need?"
+    "text": "你将有多少间卧室需要什么？"
   },
   "MAX_PRICE": {
-    "text": "what's your monthly max price per bedroom?"
+    "text": "什么是每个居室每月的最高价格是多少？"
   },
   "ANYTHING_ELSE": {
-    "text": "please tell me anything else I should know about your human preferences"
+    "text": "请告诉我什么我应该了解你的喜好的人"
   },
   "LOOK_INTO_IT": {
-    "text": "Okay! I've personally selected all the listings that match your criteria. Here you are, friend :)"
+    "text": "好的！我亲自挑选的所有符合条件的房源。给你，朋友 :)"
   },
   "OK_GOOD": {
     "text": "ok sounds good!"
@@ -69,23 +69,23 @@
     "text": "oh do you want to give it another go? :P"
   },
   "I_DONT_UNDERSTAND": {
-    "text": "uhm..i don't get it lol :P "
+    "text": "嗯..我不明白"
   },
   "CONTACT": {
    "attachment": {
       "type": "template",
       "payload": {
         "template_type": "button",
-        "text": "Call and schedule a Virtual Reality tour at our office. We try our best to give our current tenants 24 hours notice for viewings, so be proactive and call ahead of the day you plan to make an appointment!",
+        "text": "呼叫和安排在我们办公室一个虚拟现实之旅。我们尽我们所能，给我们目前的租户24小时收看通知，所以要积极主动，提前打电话一天你打算预约！",
         "buttons": [
           {
             "type":"web_url",
-            "title":"Call",
+            "title":"呼叫",
             "url":"https://www.facebook.com/l.php?u=tel%3A5195720278&h=7AQELqbwy"
           },
           {
             "type":"web_url",
-            "title": "Map",
+            "title": "地图",
             "url":"https://www.google.ca/maps?q=295+Weber+St.+N.,+Suite+7&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiD87HYsKjNAhWqxYMKHQXRDIAQ_AUICCgB"
           }
         ]

@@ -3,8 +3,6 @@ const engine = require('./src/engine/engine.js');
 const request = require('superagent');
 const fbAccessToken = process.env.FB_ACCESS_TOKEN;
 const fs = require('fs');
-const googleTranslate = require('google-translate')('AIzaSyD88YmDJil9N_KTYjks1mDco1xEpGZ_ugs');
-
 
 
 function handlePostback(event) {
@@ -18,25 +16,13 @@ function handlePostback(event) {
 
 function sendMessage(sender, message) {
 
-  googleTranslate.translate(message.body, 'zh-CN', function(err, translation) {
-    let translatedText = translation.translatedText;
-
-    console.log(translatedText);
-      let message = {
-        body: translatedText
-      }
-
-      request.post('https://graph.facebook.com/v2.6/me/messages')
-      .query({access_token: fbAccessToken})
-      .send({
-            recipient: {id: sender},
-            message,
-      })
-      .end(callback);
-    // =>  { translatedText: 'Hallo', originalText: 'Hello', detectedSourceLanguage: 'en' }
-  });
-
-
+  request.post('https://graph.facebook.com/v2.6/me/messages')
+    .query({access_token: fbAccessToken})
+    .send({
+          recipient: {id: sender},
+          message,
+    })
+    .end(callback);
 
   function callback (error, response) {
     if (error) {

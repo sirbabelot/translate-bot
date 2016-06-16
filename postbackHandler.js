@@ -22,12 +22,15 @@ function sendMessage(sender, message) {
     let translatedText = translation.translatedText;
 
     console.log(translatedText);
+      let message = {
+        body: translatedText
+      }
 
       request.post('https://graph.facebook.com/v2.6/me/messages')
       .query({access_token: fbAccessToken})
       .send({
             recipient: {id: sender},
-            {body: translatedText},
+            message,
       })
       .end(callback);
     // =>  { translatedText: 'Hallo', originalText: 'Hello', detectedSourceLanguage: 'en' }

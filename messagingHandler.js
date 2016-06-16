@@ -53,6 +53,7 @@ function sendMessage(sender, message) {
           console.warn('Error: ', response.body.error)
       }
     }
+    
   })
 }
 

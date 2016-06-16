@@ -1,0 +1,140 @@
+{
+  "HEY_THERE": {
+   "text": "Helloo!!"
+  },
+  "GREETING": {
+    "text": "are you looking for a place to rent?"
+  },
+  "GROUP_MYSELF": {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Are you looking with a group of friends or by yourself?",
+        "buttons":[
+          {
+            "type":"postback",
+            "title":"group",
+            "payload":"group"
+          },
+          {
+            "type":"postback",
+            "title": "by myself",
+            "payload":"by myself"
+          }
+        ]
+      }
+    }
+  },
+  "NO_HELP": {
+    "text": "Okay! If you still need to talk to someone you can checkout our contact section! :D"
+  },
+  "MALE_OR_FEMALE": {
+     "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"To make sure Domus Rentals have all the same genders, what is your gender?",
+        "buttons":[
+          {
+            "type":"postback",
+            "title":"male",
+            "payload":"male"
+          },
+          {
+            "type":"postback",
+            "title": "female",
+            "payload":"female"
+          }
+        ]
+      }
+    }
+  },
+  "NUM_OF_ROOMS": {
+    "text": "How many bedrooms will you need?"
+  },
+  "MAX_PRICE": {
+    "text": "what's your monthly max price per bedroom?"
+  },
+  "ANYTHING_ELSE": {
+    "text": "please tell me anything else I should know about your human preferences"
+  },
+  "LOOK_INTO_IT": {
+    "text": "Okay! I've personally selected all the listings that match your criteria. Here you are, friend :)"
+  },
+  "OK_GOOD": {
+    "text": "ok sounds good!"
+  },
+  "YOU_AGAIN": {
+    "text": "oh do you want to give it another go? :P"
+  },
+  "I_DONT_UNDERSTAND": {
+    "text": "uhm..i don't get it lol :P "
+  },
+  "CONTACT": {
+   "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "Call and schedule a Virtual Reality tour at our office. We try our best to give our current tenants 24 hours notice for viewings, so be proactive and call ahead of the day you plan to make an appointment!",
+        "buttons": [
+          {
+            "type":"web_url",
+            "title":"Call",
+            "url":"https://www.facebook.com/l.php?u=tel%3A5195720278&h=7AQELqbwy"
+          },
+          {
+            "type":"web_url",
+            "title": "Map",
+            "url":"https://www.google.ca/maps?q=295+Weber+St.+N.,+Suite+7&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiD87HYsKjNAhWqxYMKHQXRDIAQ_AUICCgB"
+          }
+        ]
+      }
+    }
+  },
+  "RESULT": {
+     "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [{
+          "title": "12 Bridgeport Rd",
+          "subtitle": "Domus Student Housing",
+          "image_url": "https://www.domushousing.com/primgs/4583",
+          "buttons": [{
+            "type": "web_url",
+            "url": "https://www.domushousing.com/bd216-the-bridgeport-lofts-12-bridgeport-rd-waterloo-for-rent",
+            "title": "Domus"
+          }]
+        }, {
+          "title": "141 MacGregor Cres",
+          "subtitle": "Domus",
+          "image_url": "https://www.domushousing.com/primgs/4553",
+          "buttons": [{
+            "title": "Domus",
+            "type": "web_url",
+            "url": "https://www.domushousing.com/bd5-141-macgregor-cres-waterloo-for-rent"
+          }]
+        }, {
+          "title": "158 King St N",
+          "subtitle": "Domus",
+          "image_url": "https://www.domushousing.com/primgs/4539",
+          "buttons": [{
+            "title": "Domus",
+            "type": "web_url",
+            "url": "https://www.domushousing.com/bd722-64-marshall-st-waterloo-for-rent"
+          }]
+        }, {
+          "title": "86 University Ave. W.",
+          "subtitle": "Domus",
+          "image_url": "https://www.domushousing.com/primgs/4240",
+          "buttons": [{
+            "title": "Domus",
+            "type": "web_url",
+            "url": "https://www.domushousing.com/bd1066-86-university-ave-w-waterloo-for-rent"
+          }]
+        }]
+      }
+    }
+  }
+}

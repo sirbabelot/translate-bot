@@ -30,17 +30,16 @@ function getMessagesToSend(responseKeysHash) {
  */
 function turn(message) {
   let responseKeysHash;
+  console.log(message);
   if (message.reset === true) {
     bot = Stately.machine(statelyConfig, INITIAL_STATE).bind(function(event, oldState, newState) {
       this[newState].oldState = oldState;
     });
     responseKeysHash = bot.onEnter();
-    return;
   } else {
     responseKeysHash = bot.onInput(message.body);
-    return getMessagesToSend(responseKeysHash);
   }
-  
+  return getMessagesToSend(responseKeysHash);
 }
 
 module.exports = { turn };

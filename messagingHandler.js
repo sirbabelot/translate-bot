@@ -34,7 +34,7 @@ function handleMessageEvent(event) {
           body: translatedText
         }
       }
-      // let message = { body: text };
+
       if (isFirstMessage || translatedText === 'reset') {
         message.reset = true;
         isFirstMessage = false;
